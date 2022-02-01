@@ -1,0 +1,12 @@
+.background {
+  background: url("../../assets/pictures/portfoliothree.png");
+  height: 850px;
+  width: 1280px;
+  display: flex;
+  background-repeat: no-repeat;
+}
+
+.circle {
+  height: 500px;
+  margin: 150px;
+}
