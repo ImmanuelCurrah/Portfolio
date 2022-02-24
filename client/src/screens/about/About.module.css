@@ -1,0 +1,15 @@
+.img {
+  height: 65vh;
+  margin-right: 10%;
+  border-radius: 12px;
+}
+
+.about_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text {
+  width: 35vw;
+}

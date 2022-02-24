@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+
+.form_inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form {
+  text-align: center;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+.input {
+  width: 100%;
+}
+
+.message {
+  height: 150px;
+  width: 100%;
+}
+
+.button {
+  color: white;
+  background: black;
+  font-size: 90%;
+  border: none;
+  width: 7vw;
+  height: 5vh;
+  border-radius: 12px;
+}
+
+.button:hover {
+  cursor: pointer;
+}

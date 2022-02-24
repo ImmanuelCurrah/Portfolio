@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+
+.projects {
+  margin: 5vh;
+  text-align: center;
+}
+
+.name {
+  font-family: "Zen Kurenaido", sans-serif;
+}
