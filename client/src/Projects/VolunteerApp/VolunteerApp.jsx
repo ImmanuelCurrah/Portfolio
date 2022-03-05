@@ -1,20 +1,28 @@
+import { useState } from "react";
 import Card from "../../assets/UI/Card/Card";
+import Modal from "../../Modal/Modal";
 import classes from "../ProjectsAll.module.css";
 
-export default function VolunteerApp(props) {
-  const { toggle, setToggle, toggleApp } = props;
+export default function VolunteerApp() {
+  const [show, setShow] = useState(false);
+
   return (
     <div className={classes.projects}>
       <h1
         className={classes.name}
         onClick={() => {
-          setToggle((prevToggle) => !prevToggle);
-          toggleApp();
+          setShow(true);
         }}
       >
         Volunteer App
       </h1>
-      {toggle && (
+      <Modal
+        onClose={() => {
+          setShow(false);
+        }}
+        show={show}
+        title="VolunteerApp"
+      >
         <Card>
           <div>
             An application that allows both business and volunteers to sign up
@@ -27,7 +35,7 @@ export default function VolunteerApp(props) {
           <div>deployed link</div>
           <div>github</div>
         </Card>
-      )}
+      </Modal>
     </div>
   );
 }

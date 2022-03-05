@@ -5,31 +5,12 @@ import mountain from "../../assets/pictures/pngfind.com-mountain-outline-png-148
 import mountain_two from "../../assets/pictures/mountain.png";
 import tree from "../../assets/pictures/tree.png";
 import YugioProject from "../../Projects/Yugio/YugioProject";
-// import MazeRunning from "../../Projects/Maze/MazeRunning";
-// import VolunteerApp from "../../Projects/VolunteerApp/VolunteerApp";
+import MazeRunning from "../../Projects/Maze/MazeRunning";
+import VolunteerApp from "../../Projects/VolunteerApp/VolunteerApp";
 import Contact from "../contactForm/Contact";
 import About from "../about/About";
 
 export default function PageTitle(props) {
-  // const [yugiohToggle, setYugioToggle] = useState(false);
-  // const [mazeToggle, setMazeToggle] = useState(false);
-  // const [appToggle, setAppToggle] = useState(false);
-
-  // const toggleYugioh = () => {
-  //   setAppToggle(false);
-  //   setMazeToggle(false);
-  // };
-
-  // const toggleMaze = () => {
-  //   setYugioToggle(false);
-  //   setAppToggle(false);
-  // };
-
-  // const toggleApp = () => {
-  //   setYugioToggle(false);
-  //   setMazeToggle(false);
-  // };
-
   return (
     <div className={classes.background_pages} id={props.id}>
       <div className={classes.name_titles}>
@@ -47,21 +28,9 @@ export default function PageTitle(props) {
               />
             </div>
             <div>
-              <YugioProject
-              // toggle={yugiohToggle}
-              // setToggle={setYugioToggle}
-              // toggleYugioh={toggleYugioh}
-              />
-              {/* <MazeRunning
-                toggle={mazeToggle}
-                setToggle={setMazeToggle}
-                toggleMaze={toggleMaze}
-              />
-              <VolunteerApp
-                toggle={appToggle}
-                setToggle={setAppToggle}
-                toggleApp={toggleApp}
-              /> */}
+              <YugioProject />
+              <MazeRunning />
+              <VolunteerApp />
             </div>
             <img
               className={classes.mountain}

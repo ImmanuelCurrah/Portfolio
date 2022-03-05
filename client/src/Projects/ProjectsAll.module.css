@@ -7,4 +7,10 @@
 
 .name {
   font-family: "Zen Kurenaido", sans-serif;
+  cursor: pointer;
+}
+
+.external_link {
+  text-decoration: underline;
+  cursor: pointer;
 }

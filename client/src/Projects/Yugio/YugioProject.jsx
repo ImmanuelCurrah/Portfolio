@@ -30,8 +30,22 @@ export default function YugioProject(props) {
             levels, every win gets you closer to that goal. This was my first
             project at GA.
           </div>
-          <div>deployed link</div>
-          <div>github</div>
+          <div
+            className={classes.external_link}
+            onClick={() => {
+              window.location.href = "https://immanuelcurrah.github.io/Yug.io/";
+            }}
+          >
+            https://immanuelcurrah.github.io/Yug.io/
+          </div>
+          <div
+            className={classes.external_link}
+            onClick={() => {
+              window.location.href = "https://github.com/ImmanuelCurrah/Yug.io";
+            }}
+          >
+            https://github.com/ImmanuelCurrah/Yug.io
+          </div>
         </Card>
       </Modal>
     </div>

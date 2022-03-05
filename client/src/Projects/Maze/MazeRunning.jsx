@@ -1,20 +1,27 @@
+import { useState } from "react";
+import Modal from "../../Modal/Modal";
 import Card from "../../assets/UI/Card/Card";
 import classes from "../ProjectsAll.module.css";
 
 export default function MazeRunning(props) {
-  const { toggle, setToggle, toggleMaze } = props;
+  const [show, setShow] = useState(false);
   return (
     <div className={classes.projects}>
       <h1
         className={classes.name}
         onClick={() => {
-          setToggle((prevToggle) => !prevToggle);
-          toggleMaze();
+          setShow(true);
         }}
       >
         Maze Running
       </h1>
-      {toggle && (
+      <Modal
+        onClose={() => {
+          setShow(false);
+        }}
+        show={show}
+        title="Maze Running"
+      >
         <Card>
           <div>
             This is a maze game. You can compete with other player's times in
@@ -25,7 +32,7 @@ export default function MazeRunning(props) {
           <div>deployed link</div>
           <div>github</div>
         </Card>
-      )}
+      </Modal>
     </div>
   );
 }

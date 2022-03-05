@@ -1,7 +1,6 @@
 .card {
-  border: 1px solid black;
   border-radius: 12px;
-  width: 20vw;
+  width: 400px;
 }
 
 .children {
