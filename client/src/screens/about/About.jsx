@@ -27,6 +27,8 @@ export default function About() {
           <i className="devicon-bootstrap-plain-wordmark colored"></i>
           <i className="devicon-rails-plain-wordmark colored"></i>
         </div>
+        <br />
+        <div>Click here for my Resume!</div>
       </div>
     </div>
   );
