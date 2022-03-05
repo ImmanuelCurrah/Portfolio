@@ -1,5 +1,6 @@
 import classes from "./About.module.css";
 import me from "../../assets/pictures/me.jpeg";
+import pdf from "../../assets/pdf/immanuel-resume.pdf";
 
 export default function About() {
   return (
@@ -71,8 +72,16 @@ export default function About() {
             alt="rails icon"
           />
         </div>
-        <br />
-        <div>Click here for my Resume!</div>
+        <div className={classes.resume_container}>
+          <a
+            className={classes.resume}
+            href={pdf}
+            target="_black"
+            rel="noreferrer"
+          >
+            Click here to see my Resume!
+          </a>
+        </div>
       </div>
     </div>
   );

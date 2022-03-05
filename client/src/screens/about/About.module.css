@@ -12,6 +12,7 @@
 
 .text {
   width: 35vw;
+  margin-bottom: 10px;
 }
 
 .languages {
@@ -22,4 +23,16 @@
 .language_icons {
   width: 50px;
   padding: 10px;
+}
+
+.resume {
+  color: black;
+}
+
+.resume:visited {
+  color: black;
+}
+
+.resume_container {
+  margin-top: 10px;
 }
