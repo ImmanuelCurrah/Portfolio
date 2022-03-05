@@ -29,8 +29,24 @@ export default function MazeRunning(props) {
             high scores will be recorded but only the best are shown. Good luck!
             This was my second project at GA.
           </div>
-          <div>deployed link</div>
-          <div>github</div>
+          <div
+            className={classes.external_link}
+            onClick={() => {
+              window.location.href =
+                "https://peaceful-wiles-aa2f8d.netlify.app";
+            }}
+          >
+            https://peaceful-wiles-aa2f8d.netlify.app
+          </div>
+          <div
+            className={classes.external_link}
+            onClick={() => {
+              window.location.href =
+                "https://github.com/ImmanuelCurrah/maze-run";
+            }}
+          >
+            https://github.com/ImmanuelCurrah/maze-run
+          </div>
         </Card>
       </Modal>
     </div>
