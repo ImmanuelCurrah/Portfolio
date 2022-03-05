@@ -32,8 +32,33 @@ export default function VolunteerApp() {
             the backend functionality and the user Auth using express and
             mongoDB.
           </div>
-          <div>deployed link</div>
-          <div>github</div>
+          <div
+            className={classes.external_link}
+            onClick={() => {
+              window.location.href = "https://hungry-borg-6b9f04.netlify.app";
+            }}
+          >
+            https://hungry-borg-6b9f04.netlify.app
+          </div>
+          <div
+            className={classes.external_link}
+            onClick={() => {
+              window.location.href =
+                "https://github.com/ImmanuelCurrah/VolunteerApp";
+            }}
+          >
+            https://github.com/ImmanuelCurrah/VolunteerApp
+          </div>
+          <div>source code for the backend in Express:</div>
+          <div
+            className={classes.external_link}
+            onClick={() => {
+              window.location.href =
+                "https://github.com/ImmanuelCurrah/VolunteerAppBackend";
+            }}
+          >
+            https://github.com/ImmanuelCurrah/VolunteerAppBackend
+          </div>
         </Card>
       </Modal>
     </div>
