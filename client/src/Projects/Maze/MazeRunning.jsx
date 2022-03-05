@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "../../Modal/Modal";
-import Card from "../../assets/UI/Card/Card";
+import Card from "../../UI/Card/Card";
 import classes from "../ProjectsAll.module.css";
 
 export default function MazeRunning(props) {
@@ -36,7 +36,7 @@ export default function MazeRunning(props) {
                 "https://peaceful-wiles-aa2f8d.netlify.app";
             }}
           >
-            https://peaceful-wiles-aa2f8d.netlify.app
+            Deployed Website
           </div>
           <div
             className={classes.external_link}
@@ -45,7 +45,7 @@ export default function MazeRunning(props) {
                 "https://github.com/ImmanuelCurrah/maze-run";
             }}
           >
-            https://github.com/ImmanuelCurrah/maze-run
+            Github Source Code
           </div>
         </Card>
       </Modal>

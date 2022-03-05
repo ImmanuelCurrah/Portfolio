@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Card from "../../assets/UI/Card/Card";
+import Card from "../../UI/Card/Card";
 import Modal from "../../Modal/Modal";
 import classes from "../ProjectsAll.module.css";
 
@@ -38,7 +38,7 @@ export default function VolunteerApp() {
               window.location.href = "https://hungry-borg-6b9f04.netlify.app";
             }}
           >
-            https://hungry-borg-6b9f04.netlify.app
+            Deployed Website
           </div>
           <div
             className={classes.external_link}
@@ -47,7 +47,7 @@ export default function VolunteerApp() {
                 "https://github.com/ImmanuelCurrah/VolunteerApp";
             }}
           >
-            https://github.com/ImmanuelCurrah/VolunteerApp
+            Front-end Source Code
           </div>
           <div>source code for the backend in Express:</div>
           <div
@@ -57,7 +57,7 @@ export default function VolunteerApp() {
                 "https://github.com/ImmanuelCurrah/VolunteerAppBackend";
             }}
           >
-            https://github.com/ImmanuelCurrah/VolunteerAppBackend
+            Back-end Source Code
           </div>
         </Card>
       </Modal>

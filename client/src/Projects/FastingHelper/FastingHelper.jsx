@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "../../Modal/Modal";
-import Card from "../../assets/UI/Card/Card";
+import Card from "../../UI/Card/Card";
 import classes from "../ProjectsAll.module.css";
 
 export default function FastingHelper() {
@@ -38,7 +38,7 @@ export default function FastingHelper() {
               window.location.href = "https://festive-ride-24923c.netlify.app";
             }}
           >
-            https://festive-ride-24923c.netlify.app
+            Deployed Website
           </div>
           <div
             className={classes.external_link}
@@ -47,7 +47,7 @@ export default function FastingHelper() {
                 "https://github.com/ImmanuelCurrah/FastingHelper";
             }}
           >
-            https://github.com/ImmanuelCurrah/FastingHelper
+            Github Source Code
           </div>
         </Card>
       </Modal>

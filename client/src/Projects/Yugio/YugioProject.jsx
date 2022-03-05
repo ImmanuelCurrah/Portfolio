@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Card from "../../assets/UI/Card/Card";
+import Card from "../../UI/Card/Card";
 import Modal from "../../Modal/Modal";
 import classes from "../ProjectsAll.module.css";
 
@@ -36,7 +36,7 @@ export default function YugioProject(props) {
               window.location.href = "https://immanuelcurrah.github.io/Yug.io/";
             }}
           >
-            https://immanuelcurrah.github.io/Yug.io/
+            Deployed Website
           </div>
           <div
             className={classes.external_link}
@@ -44,7 +44,7 @@ export default function YugioProject(props) {
               window.location.href = "https://github.com/ImmanuelCurrah/Yug.io";
             }}
           >
-            https://github.com/ImmanuelCurrah/Yug.io
+            Github Source Code
           </div>
         </Card>
       </Modal>
