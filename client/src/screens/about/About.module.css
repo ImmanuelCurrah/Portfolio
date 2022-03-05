@@ -7,9 +7,19 @@
 .about_container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .text {
   width: 35vw;
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+i {
+  font-size: 50px;
+  padding: 10px;
 }
