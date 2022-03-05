@@ -16,16 +16,16 @@ export default function About() {
         </div>
         <div className={classes.languages}>
           <i className="devicon-react-original-wordmark"></i>
-          <i class="devicon-javascript-plain colored"></i>
-          <i class="devicon-express-original-wordmark colored"></i>
-          <i class="devicon-mongodb-plain-wordmark"></i>
-          <i class="devicon-postgresql-plain colored"></i>
-          <i class="devicon-github-original-wordmark colored"></i>
-          <i class="devicon-ruby-plain-wordmark colored"></i>
-          <i class="devicon-css3-plain colored"></i>
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-bootstrap-plain-wordmark colored"></i>
-          <i class="devicon-rails-plain-wordmark colored"></i>
+          <i className="devicon-javascript-plain colored"></i>
+          <i className="devicon-express-original-wordmark colored"></i>
+          <i className="devicon-mongodb-plain-wordmark"></i>
+          <i className="devicon-postgresql-plain colored"></i>
+          <i className="devicon-github-original-wordmark colored"></i>
+          <i className="devicon-ruby-plain-wordmark colored"></i>
+          <i className="devicon-css3-plain colored"></i>
+          <i className="devicon-html5-plain-wordmark colored"></i>
+          <i className="devicon-bootstrap-plain-wordmark colored"></i>
+          <i className="devicon-rails-plain-wordmark colored"></i>
         </div>
       </div>
     </div>
