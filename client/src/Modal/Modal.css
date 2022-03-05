@@ -8,45 +8,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: modal-reverse 1s 1 ease-in-out;
   opacity: 0;
+  transition: all 0.3s ease-in-out;
   pointer-events: none;
 }
 
 .modal.show {
-  animation: modal-movement 1s 1 ease-in-out;
-  pointer-events: visible;
   opacity: 1;
-}
-
-@keyframes modal-movement {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100vh;
-  }
-}
-
-@keyframes modal-reverse {
-  from {
-    height: 100vh;
-  }
-  to {
-    height: 0;
-  }
+  pointer-events: visible;
 }
 
 .modal-content {
   width: 500px;
   background-color: white;
-  /* transform: translateY(-50px);
-  transition: all 2s ease-in-out; */
+  transform: translateY(-50px);
+  transition: all 2s ease-in-out;
 }
 
-/* .modal.show .modal.content {
+.modal.show .modal.content {
   transform: translateY(0);
-} */
+}
 
 .modal-header,
 .modal-footer {

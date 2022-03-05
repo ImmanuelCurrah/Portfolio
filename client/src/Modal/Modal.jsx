@@ -1,10 +1,9 @@
 import "./Modal.css";
 
 export default function Modal(props) {
-  console.log(props.show);
-
   return (
     <div
+      // id="modal"
       className={`modal ${props.show ? "show" : ""}`}
       onClick={() => props.onClose()}
     >
