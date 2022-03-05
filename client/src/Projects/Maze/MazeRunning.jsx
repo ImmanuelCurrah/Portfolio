@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Card from "../../assets/UI/Card/Card";
 import classes from "../ProjectsAll.module.css";
 
