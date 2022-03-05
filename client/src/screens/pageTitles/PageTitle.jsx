@@ -7,6 +7,7 @@ import tree from "../../assets/pictures/tree.png";
 import YugioProject from "../../Projects/Yugio/YugioProject";
 import MazeRunning from "../../Projects/Maze/MazeRunning";
 import VolunteerApp from "../../Projects/VolunteerApp/VolunteerApp";
+import FastingHelper from "../../Projects/FastingHelper/FastingHelper";
 import Contact from "../contactForm/Contact";
 import About from "../about/About";
 
@@ -31,6 +32,7 @@ export default function PageTitle(props) {
               <YugioProject />
               <MazeRunning />
               <VolunteerApp />
+              <FastingHelper />
             </div>
             <img
               className={classes.mountain}
