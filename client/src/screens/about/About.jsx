@@ -1,5 +1,5 @@
 import classes from "./About.module.css";
-import me from "../../assets/pictures/me3.jpeg";
+import me from "../../assets/pictures/me.jpeg";
 
 export default function About() {
   return (
