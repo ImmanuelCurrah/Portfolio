@@ -15,17 +15,61 @@ export default function About() {
           exactly is the most important kind of work we can do.
         </div>
         <div className={classes.languages}>
-          <i className="devicon-react-original-wordmark"></i>
-          <i className="devicon-javascript-plain colored"></i>
-          <i className="devicon-express-original-wordmark colored"></i>
-          <i className="devicon-mongodb-plain-wordmark"></i>
-          <i className="devicon-postgresql-plain colored"></i>
-          <i className="devicon-github-original-wordmark colored"></i>
-          <i className="devicon-ruby-plain-wordmark colored"></i>
-          <i className="devicon-css3-plain colored"></i>
-          <i className="devicon-html5-plain-wordmark colored"></i>
-          <i className="devicon-bootstrap-plain-wordmark colored"></i>
-          <i className="devicon-rails-plain-wordmark colored"></i>
+          <img
+            className={classes.language_icons}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+            alt="react icon"
+          />
+          <img
+            className={classes.language_icons}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+            alt="javascript icon"
+          />
+          <img
+            className={classes.language_icons}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
+            alt="express icon"
+          />
+          <img
+            className={classes.language_icons}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+            alt="mongoDB icon"
+          />
+          <img
+            className={classes.language_icons}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
+            alt="postgreSQL icon"
+          />
+          <img
+            className={classes.language_icons}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+            alt="github icon"
+          />
+          <img
+            className={classes.language_icons}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg"
+            alt="ruby icon"
+          />
+          <img
+            className={classes.language_icons}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="css icon"
+          />
+          <img
+            className={classes.language_icons}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="html icon"
+          />
+          <img
+            className={classes.language_icons}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg"
+            alt="bootstrap icon"
+          />
+          <img
+            className={classes.language_icons}
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg"
+            alt="rails icon"
+          />
         </div>
         <br />
         <div>Click here for my Resume!</div>
