@@ -54,5 +54,24 @@
 }
 
 .tree {
-  width: 20vw;
+  width: 230px;
+}
+
+@media screen and (max-width: 900px) {
+  .mountain {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mountain {
+    width: 115px;
+  }
+
+  .back {
+    margin: 3vh;
+    font-family: "Zen Kurenaido", sans-serif;
+    color: black;
+    text-decoration: none;
+  }
 }

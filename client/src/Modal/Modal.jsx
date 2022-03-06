@@ -3,7 +3,6 @@ import "./Modal.css";
 export default function Modal(props) {
   return (
     <div
-      // id="modal"
       className={`modal ${props.show ? "show" : ""}`}
       onClick={() => props.onClose()}
     >
@@ -13,6 +12,14 @@ export default function Modal(props) {
         </div>
         <div className="modal-body">{props.children}</div>
         <div className="modal-footer"></div>
+        <button
+          className="button"
+          onClick={() => {
+            props.onClose();
+          }}
+        >
+          Close
+        </button>
       </div>
     </div>
   );

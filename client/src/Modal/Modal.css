@@ -39,3 +39,20 @@
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
 }
+
+.button {
+  color: white;
+  background: black;
+  font-size: 90%;
+  border: none;
+  width: 75px;
+  height: 35px;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .modal-content {
+    width: 300px;
+  }
+}

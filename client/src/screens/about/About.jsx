@@ -6,14 +6,14 @@ export default function About() {
   return (
     <div className={classes.about_container}>
       <img className={classes.img} src={me} alt="me" />
-      <div>
+      <div className={classes.mobile_container}>
         <div className={classes.text}>
           I am a Ruby and React lover. Coming from a a background in
           construction, I have a passion for problem solving and paying close
           attention to detail. Also after having been a zen buddhist monk for a
           number of years, I really learned what teamwork and community means. I
-          think that working on a team and meeting everyone where they are at
-          exactly is the most important kind of work we can do.
+          think that meeting everyone where they are at exactly is the most
+          important kind of work we can do.
         </div>
         <div className={classes.languages}>
           <img
