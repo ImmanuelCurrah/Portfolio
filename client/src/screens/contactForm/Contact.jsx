@@ -11,6 +11,7 @@ export default function Contact() {
   };
 
   const [toSend, setToSend] = useState(defaultInput);
+  const [buttonText, setButtonText] = useState("Send");
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +28,7 @@ export default function Contact() {
         console.log("FAILED...", err);
       });
     setToSend(defaultInput);
+    setButtonText("Sent!");
   };
 
   const handleChange = (e) => {
@@ -73,7 +75,7 @@ export default function Contact() {
       </div>
       <br />
       <button className={classes.button} type="submit">
-        Send
+        {buttonText}
       </button>
     </form>
   );
