@@ -10,6 +10,7 @@ import VolunteerApp from "../../Projects/VolunteerApp/VolunteerApp";
 import FastingHelper from "../../Projects/FastingHelper/FastingHelper";
 import Contact from "../contactForm/Contact";
 import About from "../about/About";
+import HomePage from "../homePage/HomePage";
 
 export default function PageTitle(props) {
   return (

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.circle {
+  height: 150px;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+  width: 85vw;
+}
