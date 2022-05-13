@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className={classes.container}>
           <div className={classes.name}>Immanuel Currah</div>
           <LinksContainer>
-            <Link link={"projects"} title={"Project"} />
+            <Link link={"projects"} title={"Projects"} />
             <Link link={"about"} title={"About"} />
             <Link link={"contact"} title={"Contact"} />
           </LinksContainer>
