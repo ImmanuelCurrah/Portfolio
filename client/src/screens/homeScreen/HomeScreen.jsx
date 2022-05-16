@@ -16,7 +16,7 @@ export default function HomeScreen() {
           <Link link={"about"} title={"About"} />
           <Link link={"contact"} title={"Contact"} />
         </LinksContainer>
-        <div>
+        <div className={classes.icons_container}>
           <img
             className={classes.icons}
             src={linkedin}

@@ -61,13 +61,13 @@ export default function PageTitle(props) {
         <a className={classes.back} href={`#${props.href}`}>
           Home
         </a>
-        <a className={classes.back} href="#projects">
+        <a className={classes.back} href={`#${props.href}`}>
           Projects
         </a>
-        <a className={classes.back} href="#about">
+        <a className={classes.back} href={`#${props.href}`}>
           About
         </a>
-        <a className={classes.back} href="#contact">
+        <a className={classes.back} href={`#${props.href}`}>
           Contact
         </a>
       </div>

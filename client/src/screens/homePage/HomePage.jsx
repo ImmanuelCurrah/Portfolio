@@ -5,9 +5,9 @@ export default function HomePage() {
   return (
     <div>
       <HomeScreen />
-      <PageTitle title={"Projects"} href={"top"} id={"projects"} />
-      <PageTitle title={"About"} href={"top"} id={"about"} />
-      <PageTitle title={"Contact"} href={"top"} id={"contact"} />
+      <PageTitle title={"Projects"} href={"projects"} id={"projects"} />
+      <PageTitle title={"About"} href={"about"} id={"about"} />
+      <PageTitle title={"Contact"} href={"contact"} id={"contact"} />
     </div>
   );
 }
