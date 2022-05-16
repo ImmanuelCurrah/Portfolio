@@ -17,8 +17,25 @@ export default function HomeScreen() {
           <Link link={"contact"} title={"Contact"} />
         </LinksContainer>
         <div>
-          <img className={classes.icons} src={linkedin} alt="linkedin icon" />
-          <img className={classes.icons} src={github} alt="github icon" />
+          <img
+            className={classes.icons}
+            src={linkedin}
+            alt="linkedin icon"
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/in/immanuelcurrah/",
+                "_blank"
+              );
+            }}
+          />
+          <img
+            className={classes.icons}
+            src={github}
+            alt="github icon"
+            onClick={() => {
+              window.open("https://github.com/ImmanuelCurrah", "_blank");
+            }}
+          />
         </div>
       </div>
     </div>
