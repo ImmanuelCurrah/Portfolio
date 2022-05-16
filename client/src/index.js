@@ -3,11 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import smoothscroll from "smoothscroll-polyfill";
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  smoothscroll.polyfill(),
   <React.StrictMode>
     <Router>
       <App />
