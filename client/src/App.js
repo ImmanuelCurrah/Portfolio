@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import smoothscroll from "smoothscroll-polyfill";
+// import smoothscroll from "smoothscroll-polyfill";
 
 import "./App.css";
 import HomePage from "./screens/homePage/HomePage";
