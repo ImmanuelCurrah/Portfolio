@@ -16,17 +16,6 @@ export default function HomeScreen() {
           <Link link={"about"} title={"About"} />
           <Link link={"contact"} title={"Contact"} />
         </LinksContainer>
-        <div
-          onClick={() => {
-            window.scroll({
-              top: 200,
-              left: 200,
-              behavior: "smooth",
-            });
-          }}
-        >
-          Test
-        </div>
         <div>
           <img
             className={classes.icons}
