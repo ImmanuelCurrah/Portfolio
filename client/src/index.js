@@ -6,9 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import smoothscroll from "smoothscroll-polyfill";
 import { BrowserRouter as Router } from "react-router-dom";
 
-smoothscroll.polyfill();
-
 ReactDOM.render(
+  smoothscroll.polyfill(),
   <React.StrictMode>
     <Router>
       <App />
