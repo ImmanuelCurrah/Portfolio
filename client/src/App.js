@@ -1,11 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-// import smoothscroll from "smoothscroll-polyfill";
-
+import smoothscroll from "smoothscroll-polyfill";
 import "./App.css";
 import HomePage from "./screens/homePage/HomePage";
 
+smoothscroll.polyfill();
+window.__forceSmoothScrollPolyfill__ = true;
+
 function App() {
-  window.__forceSmoothScrollPolyfill__ = true;
   return (
     <div className="App">
       <Routes>
