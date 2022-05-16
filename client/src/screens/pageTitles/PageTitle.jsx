@@ -22,23 +22,23 @@ export default function PageTitle(props) {
         {props.id === "projects" && (
           <div className={classes.project_names}>
             <div>
-              <img
-                className={classes.mountain}
-                src={mountain}
-                alt="calligraphy mountain"
-              />
-            </div>
-            <div>
               <YugioProject />
               <MazeRunning />
               <VolunteerApp />
               <FastingHelper />
             </div>
-            <img
-              className={classes.mountain}
-              src={mountain_two}
-              alt="calligraphy mountain"
-            />
+            <div className={classes.mountains}>
+              <img
+                className={classes.mountain}
+                src={mountain}
+                alt="calligraphy mountain"
+              />
+              <img
+                className={classes.mountain}
+                src={mountain_two}
+                alt="calligraphy mountain"
+              />
+            </div>
           </div>
         )}
         {props.id === "contact" && (

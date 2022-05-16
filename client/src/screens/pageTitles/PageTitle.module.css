@@ -46,11 +46,19 @@
   /* border: 1px solid red; */
   height: 65vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
+.mountains {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .mountain {
-  width: 25vw;
+  width: 40vw;
 }
 
 .tree {
