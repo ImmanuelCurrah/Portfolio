@@ -2,6 +2,8 @@ import classes from "./HomeScreen.module.css";
 import Link from "../Links/Link";
 import LinksContainer from "../../components/linksContainer/LinksContainer";
 import circle from "../../assets/pictures/zen-circle.png";
+import linkedin from "../../assets/pictures/linkedin.png";
+import github from "../../assets/pictures/github.png";
 
 export default function HomeScreen() {
   return (
@@ -14,6 +16,10 @@ export default function HomeScreen() {
           <Link link={"about"} title={"About"} />
           <Link link={"contact"} title={"Contact"} />
         </LinksContainer>
+        <div>
+          <img className={classes.icons} src={linkedin} alt="linkedin icon" />
+          <img className={classes.icons} src={github} alt="github icon" />
+        </div>
       </div>
     </div>
   );
