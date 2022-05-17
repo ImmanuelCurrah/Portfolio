@@ -1,7 +1,12 @@
 .img {
-  height: 20vh;
+  height: 200px;
   margin-right: 10%;
   border-radius: 12px;
+  float: left;
+}
+
+.text {
+  text-align: justify;
 }
 
 .about_container {
@@ -11,8 +16,8 @@
   text-align: center;
 }
 
-.text {
-  margin: 2px;
+.image_container {
+  margin: 10px;
 }
 
 .carousel {
@@ -26,7 +31,7 @@
   width: 100px;
   overflow-x: scroll;
   height: 75px;
-  width: 170px;
+  width: 200px;
   border: solid 1px black;
   border-radius: 12px;
 }

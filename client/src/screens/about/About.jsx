@@ -3,9 +3,9 @@ import me from "../../assets/pictures/me.jpeg";
 
 export default function About() {
   return (
-    <div className={classes.about_container}>
-      <img className={classes.img} src={me} alt="me" />
-      <div className={classes.mobile_container}>
+    <>
+      <div className={classes.image_container}>
+        <img className={classes.img} src={me} alt="me" />
         <div className={classes.text}>
           I am a Ruby and React lover. Coming from a a background in
           construction, I have a passion for problem solving and paying close
@@ -14,6 +14,8 @@ export default function About() {
           think that meeting everyone where they are at exactly is the most
           important kind of work we can do.
         </div>
+      </div>
+      <div className={classes.about_container}>
         <p>Technologies Leveraged</p>
         <div className={classes.carousel}>
           <div className={classes.languages}>
@@ -75,6 +77,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
