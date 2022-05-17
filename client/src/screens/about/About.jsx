@@ -1,6 +1,5 @@
 import classes from "./About.module.css";
 import me from "../../assets/pictures/me.jpeg";
-import pdf from "../../assets/pdf/immanuel-resume.pdf";
 
 export default function About() {
   return (
@@ -15,72 +14,65 @@ export default function About() {
           think that meeting everyone where they are at exactly is the most
           important kind of work we can do.
         </div>
-        <div className={classes.languages}>
-          <img
-            className={classes.language_icons}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-            alt="react icon"
-          />
-          <img
-            className={classes.language_icons}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-            alt="javascript icon"
-          />
-          <img
-            className={classes.language_icons}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
-            alt="express icon"
-          />
-          <img
-            className={classes.language_icons}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-            alt="mongoDB icon"
-          />
-          <img
-            className={classes.language_icons}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
-            alt="postgreSQL icon"
-          />
-          <img
-            className={classes.language_icons}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-            alt="github icon"
-          />
-          <img
-            className={classes.language_icons}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg"
-            alt="ruby icon"
-          />
-          <img
-            className={classes.language_icons}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-            alt="css icon"
-          />
-          <img
-            className={classes.language_icons}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-            alt="html icon"
-          />
-          <img
-            className={classes.language_icons}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg"
-            alt="bootstrap icon"
-          />
-          <img
-            className={classes.language_icons}
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg"
-            alt="rails icon"
-          />
-        </div>
-        <div className={classes.resume_container}>
-          <a
-            className={classes.resume}
-            href={pdf}
-            target="_black"
-            rel="noreferrer"
-          >
-            Click here to see my Resume!
-          </a>
+        <p>Technologies Leveraged</p>
+        <div className={classes.carousel}>
+          <div className={classes.languages}>
+            <img
+              className={classes.language_icons}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+              alt="react icon"
+            />
+            <img
+              className={classes.language_icons}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+              alt="javascript icon"
+            />
+            <img
+              className={classes.language_icons}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
+              alt="express icon"
+            />
+            <img
+              className={classes.language_icons}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+              alt="mongoDB icon"
+            />
+            <img
+              className={classes.language_icons}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
+              alt="postgreSQL icon"
+            />
+            <img
+              className={classes.language_icons}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
+              alt="github icon"
+            />
+            <img
+              className={classes.language_icons}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg"
+              alt="ruby icon"
+            />
+            <img
+              className={classes.language_icons}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="css icon"
+            />
+            <img
+              className={classes.language_icons}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="html icon"
+            />
+            <img
+              className={classes.language_icons}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg"
+              alt="bootstrap icon"
+            />
+            <img
+              className={classes.language_icons}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg"
+              alt="rails icon"
+            />
+          </div>
         </div>
       </div>
     </div>
