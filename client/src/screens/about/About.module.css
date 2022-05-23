@@ -117,6 +117,12 @@
 
   .languages {
     margin-bottom: 5px;
-    width: 400px;
+    width: 100%;
+  }
+
+  .language_icons {
+    width: 75px;
+    padding: 2px;
+    margin: 2px;
   }
 }
