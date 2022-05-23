@@ -41,7 +41,6 @@ export default function Contact() {
       <form className={classes.form} onSubmit={onSubmit}>
         <div className={classes.form_inputs}>
           <label>Name:</label>
-
           <input
             className={classes.input}
             type="text"
