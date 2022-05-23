@@ -97,3 +97,17 @@
     justify-content: space-between;
   }
 }
+
+@media only screen and (min-height: 800px) {
+  .mountain {
+    width: 300px;
+  }
+
+  .mountains {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+}
