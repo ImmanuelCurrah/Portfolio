@@ -42,3 +42,14 @@ html {
 .resume:visited {
   color: black;
 }
+
+@media only screen and (min-width: 667px) {
+  .background {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    width: 95vw;
+  }
+
+}
