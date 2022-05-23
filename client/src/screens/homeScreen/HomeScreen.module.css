@@ -52,3 +52,29 @@ html {
     width: 95vw;
   }
 }
+
+@media only screen and (min-width: 820px) {
+  .background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 95vw;
+  }
+
+  .circle {
+    height: 400px;
+  }
+
+  .name {
+    font-size: 65px;
+  }
+
+  .resume {
+    font-size: 30px;
+  }
+
+  .icons {
+    width: 60px;
+  }
+}
