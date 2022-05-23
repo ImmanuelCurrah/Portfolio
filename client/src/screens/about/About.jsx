@@ -3,7 +3,7 @@ import me from "../../assets/pictures/me.jpeg";
 
 export default function About() {
   return (
-    <>
+    <div className={classes.container}>
       <div className={classes.image_container}>
         <img className={classes.img} src={me} alt="me" />
         <div className={classes.text}>
@@ -16,7 +16,7 @@ export default function About() {
         </div>
       </div>
       <div className={classes.about_container}>
-        <p>Technologies Leveraged</p>
+        <p className={classes.p}>Technologies Leveraged</p>
         <div className={classes.carousel}>
           <div className={classes.languages}>
             <img
@@ -77,6 +77,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
