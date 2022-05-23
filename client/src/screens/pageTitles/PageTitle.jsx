@@ -20,12 +20,14 @@ export default function PageTitle(props) {
       </div>
       <div>
         {props.id === "projects" && (
-          <div className={classes.project_names}>
-            <div>
-              <YugioProject />
-              <MazeRunning />
-              <VolunteerApp />
-              <FastingHelper />
+          <div className={classes.names_and_mountains}>
+            <div className={classes.project_names}>
+              <div className={classes.project_names_media_query}>
+                <YugioProject />
+                <MazeRunning />
+                <VolunteerApp />
+                <FastingHelper />
+              </div>
             </div>
             <div className={classes.mountains}>
               <img

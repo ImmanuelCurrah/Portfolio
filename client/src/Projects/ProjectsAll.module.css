@@ -15,8 +15,10 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (min-width: 667px) {
   .name {
-    font-size: 25px;
+    font-family: "Zen Kurenaido", sans-serif;
+    cursor: pointer;
+    font-size: 20px;
   }
 }

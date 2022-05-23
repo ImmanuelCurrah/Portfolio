@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 5vh;
+  /* margin-top: 5vh; */
 }
 
 .lotus {
@@ -42,7 +42,7 @@
 }
 
 .project_names {
-  height: 65vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +63,18 @@
   width: 250px;
 }
 
-@media only screen and (min-width: 665px) {
+.names_and_mountains {
+  display: flex;
+  flex-direction: column;
+}
 
+@media only screen and (min-width: 667px) {
+  .project_names_media_query {
+    
+  }
+  
 
+  .mountain {
+    width: 15vw;
+  }
 }
