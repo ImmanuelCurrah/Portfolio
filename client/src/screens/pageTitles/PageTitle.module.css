@@ -59,9 +59,7 @@
   width: 40vw;
 }
 
-.tree {
-  width: 250px;
-}
+
 
 .names_and_mountains {
   display: flex;
@@ -69,11 +67,7 @@
 }
 
 @media only screen and (min-width: 667px) {
-  .project_names_media_query {
-    
-  }
   
-
   .mountain {
     width: 15vw;
   }

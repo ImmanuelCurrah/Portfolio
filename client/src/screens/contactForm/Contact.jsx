@@ -1,6 +1,7 @@
 import { send } from "emailjs-com";
 import { useState } from "react";
 import classes from "./Contact.module.css";
+import tree from "../../assets/pictures/tree.png";
 
 export default function Contact() {
   const defaultInput = {
@@ -36,47 +37,54 @@ export default function Contact() {
   };
 
   return (
-    <form className={classes.form} onSubmit={onSubmit}>
-      <div className={classes.form_inputs}>
-        <label>Name:</label>
+    <div className={classes.query_container}>
+      <form className={classes.form} onSubmit={onSubmit}>
+        <div className={classes.form_inputs}>
+          <label>Name:</label>
 
-        <input
-          className={classes.input}
-          type="text"
-          name="from_name"
-          placeholder="Your name"
-          value={toSend.from_name}
-          onChange={handleChange}
-        />
-      </div>
-      <br />
-      <div className={classes.form_inputs}>
-        <label>Email:</label>
-        <input
-          className={classes.input}
-          type="text"
-          name="reply_to"
-          placeholder="Your email"
-          value={toSend.reply_to}
-          onChange={handleChange}
-        />
-      </div>
-      <br />
-      <div className={classes.form_inputs}>
-        <label>Message:</label>
-        <textarea
-          className={classes.message}
-          type="text"
-          name="message"
-          placeholder="Your message"
-          value={toSend.message}
-          onChange={handleChange}
-        />
-      </div>
-      <br />
-      <button className={classes.button} type="submit">
-        {buttonText}
-      </button>
-    </form>
+          <input
+            className={classes.input}
+            type="text"
+            name="from_name"
+            placeholder="Your name"
+            value={toSend.from_name}
+            onChange={handleChange}
+          />
+        </div>
+        <br />
+        <div className={classes.form_inputs}>
+          <label>Email:</label>
+          <input
+            className={classes.input}
+            type="text"
+            name="reply_to"
+            placeholder="Your email"
+            value={toSend.reply_to}
+            onChange={handleChange}
+          />
+        </div>
+        <br />
+        <div className={classes.form_inputs}>
+          <label>Message:</label>
+          <textarea
+            className={classes.message}
+            type="text"
+            name="message"
+            placeholder="Your message"
+            value={toSend.message}
+            onChange={handleChange}
+          />
+        </div>
+        <br />
+        <button className={classes.button} type="submit">
+          {buttonText}
+        </button>
+      </form>
+      <img
+        className={classes.tree}
+        src={tree}
+        alt="calligraphy of birds and tree"
+      />
+    </div>
   );
 }
