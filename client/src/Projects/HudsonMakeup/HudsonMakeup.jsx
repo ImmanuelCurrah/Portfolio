@@ -3,7 +3,7 @@ import Modal from "../../Modal/Modal";
 import Card from "../../UI/Card/Card";
 import classes from "../ProjectsAll.module.css";
 
-export default function MazeRunning() {
+export default function HudsonMakeup() {
   const [show, setShow] = useState(false);
   return (
     <div className={classes.projects}>
@@ -13,27 +13,21 @@ export default function MazeRunning() {
           setShow(true);
         }}
       >
-        Maze Running
+        Hudson Valley Makeup
       </h1>
       <Modal
         onClose={() => {
           setShow(false);
         }}
         show={show}
-        title="Maze Running"
+        title="Hudson Valley Makeup"
       >
         <Card>
-          <div>
-            This is a maze game. You can compete with other player's times in
-            four unique mazes. Each one having its own design and character. The
-            high scores will be recorded but only the best are shown. Good luck!
-            This was my second project at GA.
-          </div>
+          <div>This is a website I designed for a local makeup artist</div>
           <div
             className={classes.external_link}
             onClick={() => {
-              window.location.href =
-                "https://peaceful-wiles-aa2f8d.netlify.app";
+              window.location.href = "https://www.hudsonvalleymakeup.com";
             }}
           >
             Deployed Website
@@ -42,7 +36,7 @@ export default function MazeRunning() {
             className={classes.external_link}
             onClick={() => {
               window.location.href =
-                "https://github.com/ImmanuelCurrah/maze-run";
+                "https://github.com/ImmanuelCurrah/Hudson-Makeup";
             }}
           >
             Github Source Code
