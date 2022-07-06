@@ -1,14 +1,10 @@
 // import { useState } from "react";
 import classes from "./PageTitle.module.css";
 import lotus from "../../assets/pictures/lotus.png";
-
-import YugioProject from "../../Projects/Yugio/YugioProject";
-import MazeRunning from "../../Projects/Maze/MazeRunning";
-import VolunteerApp from "../../Projects/VolunteerApp/VolunteerApp";
-import FastingHelper from "../../Projects/FastingHelper/FastingHelper";
-import HudsonMakeup from "../../Projects/HudsonMakeup/HudsonMakeup";
 import Contact from "../contactForm/Contact";
 import About from "../about/About";
+import Project from "../../Projects/Project/Project";
+import { projects } from "../../Projects/Project/Projects";
 
 export default function PageTitle(props) {
   return (
@@ -23,11 +19,17 @@ export default function PageTitle(props) {
       {props.id === "projects" && (
         <>
           <div className={classes.project_names}>
-            <YugioProject />
-            <MazeRunning />
-            <VolunteerApp />
-            <FastingHelper />
-            <HudsonMakeup />
+            {projects.map((project, index) => {
+              return (
+                <Project
+                  key={index}
+                  projectName={project.name}
+                  description={project.description}
+                  deployedLink={project.deployedLink}
+                  github={project.github}
+                />
+              );
+            })}
           </div>
         </>
       )}
