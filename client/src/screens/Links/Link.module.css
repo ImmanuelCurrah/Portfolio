@@ -1,14 +1,4 @@
-.links {
-  margin: 10px;
-  font-size: 20px;
-  font-family: "Zen Kurenaido", sans-serif;
-  font-weight: 700;
-  text-decoration: none;
-  display: block;
-  position: relative;
-  padding: 0.2em 0;
-  color: black;
-}
+
 
 .links:visited {
   text-decoration: none;
@@ -32,10 +22,4 @@
 .links:focus::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
-}
-
-@media only screen and (min-width: 820px) {
-  .links {
-    font-size: 40px;
-  }
 }
