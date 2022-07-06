@@ -10,7 +10,7 @@ export default function HomeScreen() {
     <div className="flex flex-col items-center h-screen" id="top">
       <img className="h-48 m-16" src={circle} alt="zen circle" />
       <div>
-        <div className="text-3xl">Immanuel Currah</div>
+        <div className="text-3xl font-bold">Immanuel Currah</div>
         <LinksContainer>
           <Link link={"projects"} title={"Projects"} />
           <Link link={"about"} title={"About"} />
