@@ -1,5 +1,3 @@
-// import { useState } from "react";
-import classes from "./PageTitle.module.css";
 import lotus from "../../assets/pictures/lotus.png";
 import Contact from "../contactForm/Contact";
 import About from "../about/About";
@@ -14,13 +12,13 @@ export default function PageTitle(props) {
       className="h-screen w-screen flex flex-col items-center justify-between border-2 border-t-black"
       id={props.id}
     >
-      <div className={classes.name_titles}>
+      <div className="flex flex-row items-center">
         <img className="w-24" src={lotus} alt="a lotus calligraphy" />
         <div className="text-3xl font-bold">{props.title}</div>
       </div>
       {props.id === "projects" && (
         <>
-          <div className={classes.project_names}>
+          <div className="">
             {projects.map((project, index) => {
               return (
                 <Project
