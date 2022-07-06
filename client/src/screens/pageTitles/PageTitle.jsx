@@ -12,10 +12,13 @@ import About from "../about/About";
 
 export default function PageTitle(props) {
   return (
-    <div className={classes.background_pages} id={props.id}>
+    <div
+      className="h-screen w-screen flex flex-col items-center justify-between border-2 border-t-black"
+      id={props.id}
+    >
       <div className={classes.name_titles}>
-        <img className={classes.lotus} src={lotus} alt="a lotus calligraphy" />
-        <div className={classes.headers}>{props.title}</div>
+        <img className="w-24" src={lotus} alt="a lotus calligraphy" />
+        <div className="text-3xl font-bold">{props.title}</div>
       </div>
       {props.id === "projects" && (
         <>
@@ -26,7 +29,6 @@ export default function PageTitle(props) {
             <FastingHelper />
             <HudsonMakeup />
           </div>
-          <div className={classes.mountains}></div>
         </>
       )}
       {props.id === "contact" && (
@@ -39,17 +41,17 @@ export default function PageTitle(props) {
           <About />
         </div>
       )}
-      <div className={classes.footer}>
-        <a className={classes.back} href="#top">
+      <div className="mb-6 text-xl">
+        <a className="mx-4" href="#top">
           Home
         </a>
-        <a className={classes.back} href="#projects">
+        <a className="mx-4" href="#projects">
           Projects
         </a>
-        <a className={classes.back} href="#about">
+        <a className="mx-4" href="#about">
           About
         </a>
-        <a className={classes.back} href="#contact">
+        <a className="mx-4" href="#contact">
           Contact
         </a>
       </div>

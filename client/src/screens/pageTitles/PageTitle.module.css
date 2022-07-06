@@ -5,9 +5,7 @@
   /* margin-top: 5vh; */
 }
 
-.lotus {
-  width: 10vw;
-}
+
 
 .headers {
   margin: 10px;
@@ -16,30 +14,6 @@
   font-weight: 700;
 }
 
-.back {
-  margin: 2vh;
-  font-family: "Zen Kurenaido", sans-serif;
-  color: black;
-  text-decoration: none;
-}
-
-.back:visited {
-  color: black;
-}
-
-.background_pages {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 1px solid black;
-  height: 100vh;
-  width: 95vw;
-}
-
-.footer {
-  margin-bottom: 5vh;
-}
 
 .project_names {
   height: 50vh;
@@ -47,66 +21,9 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.mountains {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.mountain {
-  width: 40vw;
-}
 
 
 
-.names_and_mountains {
-  display: flex;
-  flex-direction: column;
-}
 
-@media only screen and (min-width: 667px) {
-  
-  .mountain {
-    width: 15vw;
-  }
 
-  .mountains {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  
-}
 
-@media only screen and (min-width: 820px) {
-  .back {
-    font-size: 30px;
-  }
-
-  .mountain {
-    width: 40vw;
-  }
-
-  .mountains {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-@media only screen and (min-height: 700px) {
-  .mountain {
-    width: 250px;
-  }
-
-  .mountains {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  
-}
