@@ -6,6 +6,8 @@ import About from "../about/About";
 import Project from "../../Projects/Project/Project";
 import { projects } from "../../Projects/Project/Projects";
 
+const footerLinks = ["Home", "Projects", "About", "Contact"];
+
 export default function PageTitle(props) {
   return (
     <div
@@ -44,18 +46,13 @@ export default function PageTitle(props) {
         </div>
       )}
       <div className="mb-6 text-xl">
-        <a className="mx-4" href="#top">
-          Home
-        </a>
-        <a className="mx-4" href="#projects">
-          Projects
-        </a>
-        <a className="mx-4" href="#about">
-          About
-        </a>
-        <a className="mx-4" href="#contact">
-          Contact
-        </a>
+        {footerLinks.map((link, index) => {
+          return (
+            <a key={index} className="mx-4" href={`#${link.toLowerCase()}`}>
+              {link}
+            </a>
+          );
+        })}
       </div>
     </div>
   );

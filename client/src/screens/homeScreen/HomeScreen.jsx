@@ -7,7 +7,7 @@ import pdf from "../../assets/pdf/immanuel-resume.pdf";
 
 export default function HomeScreen() {
   return (
-    <div className="flex flex-col items-center h-screen" id="top">
+    <div className="flex flex-col items-center h-screen" id="home">
       <img className="h-48 m-16" src={circle} alt="zen circle" />
       <div>
         <div className="text-3xl font-bold">Immanuel Currah</div>
