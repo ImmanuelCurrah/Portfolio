@@ -1,9 +1,7 @@
-import classes from "./Card.module.css";
-
 export default function Card(props) {
   return (
-    <div className={classes.card}>
-      <div className={classes.children}>{props.children}</div>
+    <div className="rounded-md w-52">
+      <div className="m-4">{props.children}</div>
     </div>
   );
 }

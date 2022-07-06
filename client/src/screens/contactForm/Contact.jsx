@@ -1,6 +1,5 @@
 import { send } from "emailjs-com";
 import { useState } from "react";
-import classes from "./Contact.module.css";
 import tree from "../../assets/pictures/tree.png";
 
 export default function Contact() {
@@ -37,12 +36,12 @@ export default function Contact() {
   };
 
   return (
-    <div className={classes.query_container}>
-      <form className={classes.form} onSubmit={onSubmit}>
-        <div className={classes.form_inputs}>
+    <div>
+      <form className="text-center" onSubmit={onSubmit}>
+        <div className="flex flex-col items-start">
           <label>Name:</label>
           <input
-            className={classes.input}
+            className="w-60"
             type="text"
             name="from_name"
             placeholder="Your name"
@@ -51,10 +50,10 @@ export default function Contact() {
           />
         </div>
         <br />
-        <div className={classes.form_inputs}>
+        <div className="flex flex-col items-start">
           <label>Email:</label>
           <input
-            className={classes.input}
+            className="w-60"
             type="text"
             name="reply_to"
             placeholder="Your email"
@@ -63,10 +62,10 @@ export default function Contact() {
           />
         </div>
         <br />
-        <div className={classes.form_inputs}>
+        <div className="flex flex-col items-start">
           <label>Message:</label>
           <textarea
-            className={classes.message}
+            className="w-60 h-16"
             type="text"
             name="message"
             placeholder="Your message"
@@ -75,15 +74,14 @@ export default function Contact() {
           />
         </div>
         <br />
-        <button className={classes.button} type="submit">
+        <button
+          className="text-white bg-black w-16 h-8 rounded-lg cursor-pointer"
+          type="submit"
+        >
           {buttonText}
         </button>
       </form>
-      <img
-        className={classes.tree}
-        src={tree}
-        alt="calligraphy of birds and tree"
-      />
+      <img className="w-60" src={tree} alt="calligraphy of birds and tree" />
     </div>
   );
 }
