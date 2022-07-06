@@ -1,12 +1,22 @@
+import { useState } from "react";
 import lotus from "../../assets/pictures/lotus.png";
 import Contact from "../contactForm/Contact";
 import About from "../about/About";
 import Project from "../../Projects/Project/Project";
 import { projects } from "../../Projects/Project/Projects";
+import { useFooter } from "../../hooks/useFooter";
 
-const footerLinks = ["Home", "Projects", "About", "Contact"];
+const defaultFooterLinks = ["Home", "Projects", "About", "Contact"];
 
 export default function PageTitle(props) {
+  const [footerLinks, setFooterLinks] = useState(defaultFooterLinks);
+
+  const { currentHref, changeHref } = useFooter();
+
+  const filterFooterLinks = () => {
+    console.log(currentHref);
+  };
+
   return (
     <div
       className="h-screen w-screen flex flex-col items-center justify-between border-2 border-t-black"
@@ -46,7 +56,16 @@ export default function PageTitle(props) {
       <div className="mb-6 text-xl">
         {footerLinks.map((link, index) => {
           return (
-            <a key={index} className="mx-4" href={`#${link.toLowerCase()}`}>
+            <a
+              key={index}
+              onClick={() => {
+                // console.log(link);
+                changeHref(link);
+                filterFooterLinks();
+              }}
+              className="mx-4"
+              href={`#${link.toLowerCase()}`}
+            >
               {link}
             </a>
           );
