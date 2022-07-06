@@ -1,12 +1,12 @@
-import classes from "./About.module.css";
 import me from "../../assets/pictures/me.jpeg";
+import { icons } from "./Icons";
 
 export default function About() {
   return (
-    <div className={classes.container}>
-      <div className={classes.image_container}>
-        <img className={classes.img} src={me} alt="me" />
-        <div className={classes.text}>
+    <div>
+      <div className="m-4">
+        <img className="h-48 rounded-lg float-left mr-4" src={me} alt="me" />
+        <div className="text-justify mr-4">
           I am a Ruby and React lover. Coming from a a background in
           construction, I have a passion for problem solving and paying close
           attention to detail. Also after having been a zen buddhist monk for a
@@ -15,65 +15,20 @@ export default function About() {
           of work we can do.
         </div>
       </div>
-      <div className={classes.about_container}>
-        <p className={classes.p}>Technologies Leveraged</p>
-        <div className={classes.carousel}>
-          <div className={classes.languages}>
-            <img
-              className={classes.language_icons}
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-              alt="react icon"
-            />
-            <img
-              className={classes.language_icons}
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-              alt="javascript icon"
-            />
-            <img
-              className={classes.language_icons}
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
-              alt="express icon"
-            />
-            <img
-              className={classes.language_icons}
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-              alt="mongoDB icon"
-            />
-            <img
-              className={classes.language_icons}
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
-              alt="postgreSQL icon"
-            />
-            <img
-              className={classes.language_icons}
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-              alt="github icon"
-            />
-            <img
-              className={classes.language_icons}
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg"
-              alt="ruby icon"
-            />
-            <img
-              className={classes.language_icons}
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-              alt="css icon"
-            />
-            <img
-              className={classes.language_icons}
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-              alt="html icon"
-            />
-            <img
-              className={classes.language_icons}
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg"
-              alt="bootstrap icon"
-            />
-            <img
-              className={classes.language_icons}
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg"
-              alt="rails icon"
-            />
+      <div className="flex flex-col items-center justify-center">
+        <p className="font-bold">Technologies Leveraged</p>
+        <div className="flex justify-center">
+          <div className="flex flex-row h-24 w-52 border-2 border-black overflow-x-scroll">
+            {icons.map((icon, index) => {
+              return (
+                <img
+                  className="w-12 m-1"
+                  key={index}
+                  src={icon.src}
+                  alt={icon.alt}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
