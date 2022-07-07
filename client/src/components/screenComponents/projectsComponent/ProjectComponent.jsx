@@ -14,6 +14,7 @@ export default function ProjectComponent(props) {
               description={project.description}
               deployedLink={project.deployedLink}
               github={project.github}
+              title={project.name}
             />
           );
         })}

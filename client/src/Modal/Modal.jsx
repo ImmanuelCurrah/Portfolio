@@ -9,7 +9,7 @@ export default function Modal(props) {
       onClick={() => props.onClose()}
     >
       <div
-        className="flex flex-col items-center rounded-lg bg-[#fffff9] shadow-black shadow-lg w-10/12"
+        className="flex flex-col items-center rounded-lg bg-[#fffff9] shadow-black shadow-lg w-72 tablet:w-96"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="text-xl p-4">

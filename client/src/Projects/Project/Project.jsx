@@ -19,7 +19,7 @@ export default function Project(props) {
           setShow(false);
         }}
         show={show}
-        title="FastingHelper"
+        title={props.title}
       >
         <Card>
           <div className="flex flex-col items-center">
