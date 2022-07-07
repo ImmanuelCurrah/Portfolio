@@ -67,7 +67,7 @@ export default function Contact() {
           <div className="flex flex-col items-start">
             <label>Message:</label>
             <textarea
-              className="w-60 h-16 tablet:w-72 h-48"
+              className="w-60 h-16 tablet:w-72 tablet:h-48"
               type="text"
               name="message"
               placeholder="Your message"
@@ -83,7 +83,7 @@ export default function Contact() {
         <h2 className="font-bold text-3xl">Message sent. Thank you!</h2>
       )}
       <img
-        className="w-60 tablet:m-4 w-72"
+        className="w-60 tablet:m-4 tablet:w-72"
         src={tree}
         alt="calligraphy of birds and tree"
       />
