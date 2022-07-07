@@ -4,9 +4,9 @@ import { icons } from "./Icons";
 export default function About() {
   return (
     <div>
-      <div className="m-4">
+      <div className="m-4 tablet:flex flex-col items-center">
         <img
-          className="h-48 rounded-lg float-left mr-4 tablet:h-72 tablet:my-4"
+          className="h-48 rounded-lg float-left mr-4 tablet:h-72"
           src={me}
           alt="me"
         />

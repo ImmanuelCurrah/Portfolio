@@ -14,6 +14,7 @@ export default function FooterLinks(props) {
       );
     };
     filterHref();
+    //eslint-disable-next-line
   }, []);
 
   return (
