@@ -1,5 +1,5 @@
 import PageTitle from "../pageTitles/PageTitle";
-import HomeScreen from "../homeScreen/HomeScreen";
+import HomeScreen from "../../components/homeScreen/HomeScreen";
 
 export default function HomePage() {
   return (

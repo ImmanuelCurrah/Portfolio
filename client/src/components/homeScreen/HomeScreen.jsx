@@ -1,5 +1,5 @@
 import Link from "../Links/Link";
-import LinksContainer from "../../components/linksContainer/LinksContainer";
+import LinksContainer from "../linksContainer/LinksContainer";
 import circle from "../../assets/pictures/zen-circle.png";
 import linkedin from "../../assets/pictures/linkedin.png";
 import github from "../../assets/pictures/github.png";

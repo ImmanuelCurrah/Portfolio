@@ -5,7 +5,10 @@ import HeaderComponent from "../../components/pageTitleComponents/HeaderComponen
 
 export default function PageTitle(props) {
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-between border-2 border-t-black">
+    <div
+      className="h-screen w-screen flex flex-col items-center justify-between border-2 border-t-black"
+      id={props.id}
+    >
       <HeaderComponent title={props.title} />
       {props.id === "projects" && <ProjectComponent id={props.id} />}
       {props.id === "contact" && <ContactComponent id={props.id} />}

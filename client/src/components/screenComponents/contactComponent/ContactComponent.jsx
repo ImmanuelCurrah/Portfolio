@@ -1,4 +1,4 @@
-import Contact from "../../../screens/contactForm/Contact";
+import Contact from "../../contactForm/Contact";
 import FooterLinks from "../../footerLinks/FooterLinks";
 
 export default function ContactComponent(props) {
