@@ -6,6 +6,10 @@ module.exports = {
       fontFamily: {
         zen: ["Zen Kurenaido", "serif"],
       },
+      screens: {
+        tablet: "750px",
+        desktop: "1000px",
+      },
     },
   },
   plugins: [],

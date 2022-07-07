@@ -1,17 +1,16 @@
 import Link from "../Links/Link";
 import LinksContainer from "../linksContainer/LinksContainer";
-import circle from "../../assets/pictures/zen-circle.png";
-import linkedin from "../../assets/pictures/linkedin.png";
-import github from "../../assets/pictures/github.png";
-import pdf from "../../assets/pdf/immanuel-resume.pdf";
+import ResumeLink from "../homeScreenComponents/ResumeComponent/ResumeLink";
+import SocialMediaLinks from "../homeScreenComponents/SocialMediaComponent/SocialMediaLinks";
+import ZenCircle from "../homeScreenComponents/ZenCircleComponent/ZenCircle";
 
 export default function HomeScreen() {
   return (
     <div
-      className="flex flex-col items-center justify-center h-screen"
+      className="flex flex-col items-center justify-center h-screen tablet:flex-row"
       id="home"
     >
-      <img className="h-48 m-16" src={circle} alt="zen circle" />
+      <ZenCircle />
       <div>
         <div className="text-3xl font-bold">Immanuel Currah</div>
         <LinksContainer>
@@ -19,35 +18,8 @@ export default function HomeScreen() {
           <Link link={"about"} title={"About"} />
           <Link link={"contact"} title={"Contact"} />
         </LinksContainer>
-        <a
-          className="text-black visited:text-black"
-          href={pdf}
-          target="_black"
-          rel="noreferrer"
-        >
-          Click here to see my Resume!
-        </a>
-        <div className="flex flex-row items-center justify-start">
-          <img
-            className="h-8 m-1 cursor-pointer"
-            src={linkedin}
-            alt="linkedin icon"
-            onClick={() => {
-              window.open(
-                "https://www.linkedin.com/in/immanuelcurrah/",
-                "_blank"
-              );
-            }}
-          />
-          <img
-            className="h-8 m-1 cursor-pointer"
-            src={github}
-            alt="github icon"
-            onClick={() => {
-              window.open("https://github.com/ImmanuelCurrah", "_blank");
-            }}
-          />
-        </div>
+        <ResumeLink />
+        <SocialMediaLinks />
       </div>
     </div>
   );

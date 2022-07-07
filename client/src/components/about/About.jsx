@@ -5,8 +5,12 @@ export default function About() {
   return (
     <div>
       <div className="m-4">
-        <img className="h-48 rounded-lg float-left mr-4" src={me} alt="me" />
-        <div className="text-justify mr-4">
+        <img
+          className="h-48 rounded-lg float-left mr-4 tablet:h-72 tablet:my-4"
+          src={me}
+          alt="me"
+        />
+        <div className="text-justify mr-4 tablet:w-96 tablet:text-xl">
           I am a Ruby and React lover. Coming from a a background in
           construction, I have a passion for problem solving and paying close
           attention to detail. Also after having been a zen buddhist monk for a
@@ -16,9 +20,9 @@ export default function About() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center">
-        <p className="font-bold">Technologies Leveraged</p>
+        <p className="font-bold tablet:text-2xl">Technologies Leveraged</p>
         <div className="flex justify-center">
-          <div className="flex flex-row h-24 w-52 border-2 border-black overflow-x-scroll">
+          <div className="flex flex-row h-24 w-52 border-2 border-black overflow-x-scroll tablet:w-72">
             {icons.map((icon, index) => {
               return (
                 <img
