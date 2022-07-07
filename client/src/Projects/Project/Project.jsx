@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import ProjectName from "../../components/projectComponents/projectNames/ProjectName";
 import Modal from "../../Modal/Modal";
 import Card from "../../UI/Card/Card";
