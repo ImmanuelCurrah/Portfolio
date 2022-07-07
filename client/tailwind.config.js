@@ -9,6 +9,7 @@ module.exports = {
       screens: {
         tablet: "750px",
         desktop: "1000px",
+        height: { raw: "(max-height: 800px)" },
       },
     },
   },
